@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: linear-gradient(270deg, rgb(0, 0, 0), rgb(153, 153, 218),black, rgb(80, 26, 196));
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;  background-position: center;
+}
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* About section styling */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  min-height: auto; /* Allow the section to take up as much space as needed */
+  margin-bottom: 4rem; /* Add space at the bottom to prevent overlap */
+}
+
+/* Container for the about section content */
+.about-container {
+  padding-top: 50px; /* Reduced padding */
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px; /* Prevent overly wide content */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Heading styling */
+.blink {
+  font-weight: bolder;
+  font-size: 3rem;
+  animation: blink 3s infinite;
+  margin-bottom: 1rem; /* Reduced margin */
+}
+
+/* Ensure proper spacing and alignment for headings */
+.about-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: black 0 5px 10px;
+  display: inline-block;
+}
+
+/* Styling for each letter in the heading */
+.about-heading span {
+  display: inline-block;
+  animation: drop 1s ease-out;
+}
+
+/* Card container styling */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 0;
+}
+
+/* Card styling */
+.card {
+  background: radial-gradient(circle, #ba5496, #555bc1);
+  border: 1px solid black;
+  color: white;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 1rem; /* Space below each card */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px black;
+}
+
+/* School name styling */
+.card p:first-of-type {
+  font-size: 1.2rem; /* Increased font size */
+  font-style: italic;
+  color: black; /* Changed text color to black */
+  text-shadow: 0 0 5px black; /* White boundary (shine) */
+}
+
+/* Blink animation for the heading */
+@keyframes blink {
+  0%, 100% {
+    color: rgb(10, 1, 1);
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white;
+  }
+  50% {
+    color: rgb(37, 131, 162);
+    text-shadow: 0 0 10px lightblue, 0 0 20px lightblue, 0 0 30px lightblue, 0 0 40px lightblue;
+  }
+}
