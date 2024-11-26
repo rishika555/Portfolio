@@ -68,8 +68,13 @@ export default function About() {
           <div className="card">Internet of Things</div>
           <div className="card">Graphic Design</div>
           <div className="card">Machine Learning</div>
+          <div className="card">Data Science</div>
+          <div className="card">Deep Learning </div>
+          <div className="card">Data Science</div>
+          <div className="card">Natural Language Processing</div>
         </div>
-      </div>
+        </div>
+     
     </section>
   );
 }

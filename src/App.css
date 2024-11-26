@@ -1,38 +1,205 @@
-.App {
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  body {
+    background: linear-gradient(135deg, #df95a0, #86bcdd, #8ed8a7, #c2a2d1, #f0d76b);
+    background-size: 400% 400%; /* Adds a subtle dynamic look if animated */
+    animation: gradientShift 15s ease infinite; /* Optional: Add animation for a flowing effect */
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+/* Glow effect */
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(42, 35, 172, 0.5), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(50px);
+  transform: translate(-50%, -50%);
+}
+
+/* Main Content */
+main {
+  min-height: 100vh;
+  width: 100%; /* Ensure the content takes the full width */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Glow Text Effect */
+.glow-effect {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 5px #fff, 0 0 10px #20abad, 0 0 15px #1a5797, 0 0 20px #1e90ff, 0 0 25px #1e90ff, 0 0 30px #1e90ff, 0 0 35px #1e90ff;
+}
+
+/* Content Section */
+.content {
+  text-align: left;
+  max-width: 50%;
+  height: auto;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.text-container {
+  flex: 1;
+  padding-right: 20px; /* Adjusted padding to reduce space */
+  position: relative;
+  display: inline-block;
+}
+
+.typing-effect {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(57, 190, 195);
+  overflow: hidden;
+  border-right: 0.15em solid rgb(233, 249, 47);
+  animation: typing 5s steps(50, end) 5s infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(37, 63, 139); }
+}
+
+.dynamic-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(139, 205, 189);
+  animation: fadeInOut 6s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* About Section */
+.about-container {
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* Projects Section */
+.projects-container {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 4rem;
+}
+
+.projects-heading {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.card-link {
+  color: lightblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-container {
+  padding: 20px;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.contact-heading {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+.contact-details a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
 }

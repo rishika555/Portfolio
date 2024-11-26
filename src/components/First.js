@@ -10,11 +10,12 @@ export default function First() {
     const [currentImage, setCurrentImage] = useState(programmerImage);
 
     useEffect(() => {
-        const titles = ["Programmer", "Full Stack Developer", "Web Developer"];
+        const titles = ["Programmer", "Full Stack Developer", "Web Developer","Software Engineer"];
         const images = {
             "Programmer": programmerImage,
             "Full Stack Developer": fullStackImage,
-            "Web Developer": webDeveloperImage
+            "Web Developer": webDeveloperImage,
+            "Software Engineer": softwareEngineeringImage
         };
         let titleIndex = 0;
 

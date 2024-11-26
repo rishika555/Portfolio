@@ -1,0 +1,96 @@
+/* Section styling */
+.certifications-section {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* Heading with glowing effect */
+.certifications-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #fff, 0 0 20px #f18baf, 0 0 30px #f5a9b8, 0 0 40px #ff1493;
+  animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #f5a9b8, 0 0 15px #f18baf, 0 0 20px #5ec9da;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #f5a9b8, 0 0 30px #f18baf, 0 0 40px #70d3d1;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #f5a9b8, 0 0 15px #f18baf, 0 0 20px #82a1df;
+  }
+}
+
+/* Container for certificate cards */
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  position: relative; /* Allow child cards to overlap */
+  z-index: 0;
+}
+
+/* Individual card */
+.certificate-card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(145deg, #e0dee2, #48425d);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+  z-index: 1; /* Default z-index for all cards */
+}
+
+/* Default content: certificate name */
+.certificate-name {
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1; /* Ensure the name appears on top */
+  transition: opacity 0.3s ease;
+}
+
+/* Image inside the card, hidden by default */
+.certificate-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the complete image is visible */
+  display: none; /* Hidden by default */
+  z-index: 0; /* Ensure image appears behind the name */
+}
+
+/* Hover effect: enlarge card, show image, and bring it to front */
+.certificate-card:hover {
+  transform: scale(2.3); /* Increase card size */
+  box-shadow: 0 0 20px #f5a9b8;
+  z-index: 10; /* Ensure the hovered card appears on top of all others */
+}
+
+/* On hover: show the image and hide the name */
+.certificate-card:hover img {
+  display: block; /* Show the image */
+}
+
+.certificate-card:hover .certificate-name {
+  display: none; /* Hide the name */
+}

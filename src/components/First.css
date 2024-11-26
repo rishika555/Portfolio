@@ -3,18 +3,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   padding: 10rem;
   box-sizing: border-box;
-  background: linear-gradient(270deg, blue, rgb(191, 87, 155), purple);
   background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;  background-position: center;
 }
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+
 .left-side {
   flex: 1;
   display: flex;
@@ -34,15 +28,15 @@
 .static-text {
   font-size: 3rem;
   font-weight: bold;
-  color: white;
-  text-shadow: 0 0 10px pink;
+  color: rgb(9, 31, 54);
+  text-shadow: 0 0 10px rgb(26, 4, 80);
 }
 
 .dynamic-text {
   font-size: 2.5rem; /* Adjusted size to fit better */
-  color: white;
+  color: rgb(7, 5, 61);
   font-weight: bold;
-  text-shadow: 0 0 10px black, 0 0 10px white;
+  text-shadow: 0 0 10px black, 0 0 10px rgb(94, 81, 81);
   margin-top: 1rem; /* Space between static and dynamic text */
   transition: all 0.5s ease;
   white-space: nowrap; /* Ensure text does not wrap */

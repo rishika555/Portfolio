@@ -1,0 +1,73 @@
+/* Navbar container */
+.bg-gradient {
+  background: rgb(95, 87, 200);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 1rem 2rem; /* Ensure adequate padding */
+  min-height: 70px;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Title on the left, nav links on the right */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Title styling */
+.title-font {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Navigation container */
+nav {
+  padding-left: 950px;
+  display: flex; /* Horizontal alignment for buttons */
+  gap: 1.5rem; /* Add space between nav items */
+  align-items: center; /* Vertically center nav items */
+}
+
+/* Individual nav items */
+.nav-item {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+  color: white; /* Default color for nav items */
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #f18baf; /* Change color on hover */
+}
+
+/* Glow effect */
+.glow-effect:hover {
+  animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px #fff, 0 0 10px #f5a9b8, 0 0 15px #f18baf, 0 0 20px #5ec9da; }
+  50% { text-shadow: 0 0 10px #fff, 0 0 20px #f5a9b8, 0 0 30px #f18baf, 0 0 40px #70d3d1; }
+  100% { text-shadow: 0 0 5px #fff, 0 0 10px #f5a9b8, 0 0 15px #f18baf, 0 0 20px #82a1df; }
+}
+
+/* Nav item underline animation */
+.nav-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #f18baf;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+}

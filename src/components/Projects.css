@@ -1,0 +1,61 @@
+/* Scope styles to the Projects component */
+#projects .projects-card {
+    background: #1e1e1e;
+    border: 2px solid white;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin: 15px;
+    box-shadow: 0 0 10px white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    width: auto; /* Allow cards to take up space as needed */
+    max-width: 300px; /* Prevent cards from becoming too wide */
+  }
+  
+  #projects .projects-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px white;
+  }
+  
+  #projects .projects-card-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  
+  #projects .projects-card-title {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: white; /* Card heading in white */
+  }
+  
+  #projects .projects-card-description {
+    font-size: 1.1rem;
+    color: pink; /* Description text in pink */
+    margin-bottom: 15px;
+  }
+  
+  #projects .projects-card-link {
+    text-decoration: none;
+    color: rgb(119, 193, 218); /* Link text in blue */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  #projects .projects-card-link:hover {
+    color: lightblue;
+  }
+  
+  /* Ensure proper spacing for the container */
+  .projects-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  

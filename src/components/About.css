@@ -2,15 +2,9 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background: linear-gradient(270deg, rgb(0, 0, 0), rgb(153, 153, 218),black, rgb(80, 26, 196));
   background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;  background-position: center;
 }
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+
 /* About section styling */
 .about-section {
   display: flex;
@@ -26,7 +20,6 @@ body {
 /* Container for the about section content */
 .about-container {
   padding-top: 50px; /* Reduced padding */
-  color: white;
   text-align: center;
   width: 100%;
   max-width: 1200px; /* Prevent overly wide content */
@@ -66,27 +59,28 @@ body {
 
 /* Card styling */
 .card {
-  background: radial-gradient(circle, #ba5496, #555bc1);
-  border: 1px solid black;
-  color: white;
+  background: #458083 !important; /* Muted teal for a calm and refined look */
+  border: 1px solid #BFD7EA; /* Light pastel border to complement the background */
+  color: #FFE3E3; /* Soft pink for the text */
   padding: 1rem;
   width: 250px;
   border-radius: 10px;
-  box-shadow: 0 0 10px black;
-  transition: transform 0.3s, box-shadow 0.3s;
-  margin-bottom: 1rem; /* Space below each card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle and modern shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 0.5rem;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px black;
+  transform: translateY(-5px); /* Subtle hover lift */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
 }
+
 
 /* School name styling */
 .card p:first-of-type {
   font-size: 1.2rem; /* Increased font size */
   font-style: italic;
-  color: black; /* Changed text color to black */
+  color: #f9a7ee; /* Changed text color to black */
   text-shadow: 0 0 5px black; /* White boundary (shine) */
 }
 

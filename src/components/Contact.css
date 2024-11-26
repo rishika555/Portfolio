@@ -1,0 +1,64 @@
+/* Section Styling */
+.contact-page .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    color: white;
+  }
+  
+  /* Contact Heading */
+  .contact-page .contact-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #fff, 0 0 20px #f18baf, 0 0 30px #f5a9b8, 0 0 40px #ff1493;
+    animation: glow 1.5s infinite;
+  }
+  
+  /* Card Container */
+  .contact-page .contact-card-container {
+    display: flex;
+    flex-direction: column; /* Stacks cards vertically */
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Individual Card */
+  .contact-page .contact-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .contact-page .contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #f5a9b8;
+  }
+  
+  /* Icons */
+  .contact-page .contact-icon {
+    font-size: 2rem;
+    color: #f5a9b8;
+  }
+  
+  /* Links Styling */
+  .contact-page .contact-card a {
+    color: #f18baf;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-page .contact-card a:hover {
+    text-decoration: underline;
+  }
+  
