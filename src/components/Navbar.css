@@ -30,7 +30,7 @@ nav {
   gap: 2rem; /* Add space between nav items */
   align-items: center; /* Vertically center nav items */
   margin-left: auto; /* Push the navigation items to the far right */
-  padding-left: 900; /* Remove unnecessary left padding */
+  padding-right: 900; /* Remove unnecessary left padding */
 }
 
 /* Individual nav items */
