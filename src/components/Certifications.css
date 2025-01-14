@@ -2,7 +2,8 @@
 .certifications-section {
   text-align: center;
   padding: 2rem;
-  color: white;
+  color: rgb(14, 7, 7);
+  font-weight: bold;
 }
 
 /* Heading with glowing effect */
@@ -43,7 +44,7 @@
   position: relative;
   width: 200px;
   height: 200px;
-  background: linear-gradient(145deg, #e0dee2, #48425d);
+  background: linear-gradient(145deg, #e0dee2, #413860);
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.1);
   display: flex;
@@ -58,7 +59,7 @@
 
 /* Default content: certificate name */
 .certificate-name {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1rem;
   padding: 10px;
   text-align: center;

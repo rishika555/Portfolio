@@ -62,14 +62,15 @@ export default function Certifications() {
 
   return (
     <section id="certifications" className="certifications-section">
-      <h1 className="certifications-heading">Certifications</h1>
+      <h1 className="certifications-heading" data-aos="fade-up">
+        Certifications
+      </h1>
       <div className="certificates-container">
         {certificates.map((cert) => (
           <div className="certificate-card" key={cert.id}>
             <p>{cert.title}</p>
             <div className="certificate-popup">
               <img src={cert.image} alt={cert.title} />
-              <p className="certificate-description">{cert.description}</p>
             </div>
           </div>
         ))}

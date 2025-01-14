@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
   box-sizing: border-box;
   position: relative;
   min-height: auto; /* Allow the section to take up as much space as needed */
@@ -38,7 +38,7 @@ body {
 .about-heading {
   font-size: 2rem;
   font-weight: bold;
-  text-shadow: black 0 5px 10px;
+  text-shadow: rgb(225, 220, 220) 0 5px 10px;
   display: inline-block;
 }
 
@@ -59,28 +59,45 @@ body {
 
 /* Card styling */
 .card {
-  background: #458083 !important; /* Muted teal for a calm and refined look */
-  border: 1px solid #BFD7EA; /* Light pastel border to complement the background */
+  background: #308084 !important; /* Muted teal for a calm and refined look */
+  border: 3px solid #BFD7EA; /* Light pastel border to complement the background */
   color: #FFE3E3; /* Soft pink for the text */
   padding: 1rem;
   width: 250px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle and modern shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   margin-bottom: 0.5rem;
 }
 
+/* Hover effect for card */
 .card:hover {
   transform: translateY(-5px); /* Subtle hover lift */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+  animation: cardGlow 1.5s infinite; /* Apply glowing animation */
 }
 
+/* Keyframes for glowing border */
+@keyframes cardGlow {
+  0% {
+    border-color: #ffe3e3;
+    box-shadow: 0 0 5px #ffe3e3, 0 0 10px #ffe3e3, 0 0 20px #ffe3e3, 0 0 30px #ffe3e3;
+  }
+  50% {
+    border-color: #f9a7ee;
+    box-shadow: 0 0 10px #f9a7ee, 0 0 20px #f9a7ee, 0 0 30px #f9a7ee, 0 0 40px #f9a7ee;
+  }
+  100% {
+    border-color: #ffe3e3;
+    box-shadow: 0 0 5px #ffe3e3, 0 0 10px #ffe3e3, 0 0 20px #ffe3e3, 0 0 30px #ffe3e3;
+  }
+}
 
 /* School name styling */
 .card p:first-of-type {
-  font-size: 1.2rem; /* Increased font size */
+  font-size: 1.5rem; /* Increased font size */
   font-style: italic;
-  color: #f9a7ee; /* Changed text color to black */
+  color: #000000; /* Changed text color to black */
   text-shadow: 0 0 5px black; /* White boundary (shine) */
 }
 

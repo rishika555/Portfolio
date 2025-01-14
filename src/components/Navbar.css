@@ -1,6 +1,6 @@
 /* Navbar container */
 .bg-gradient {
-  background: rgb(95, 87, 200);
+  background: rgb(0, 0, 0); /* Black background */
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 1rem 2rem; /* Ensure adequate padding */
@@ -13,20 +13,24 @@
   left: 0; /* Align to the left */
   right: 0; /* Align to the right */
   z-index: 1000; /* Ensure it stays above other elements */
+  border-bottom: 3px solid white; /* Bold white lower boundary */
+  box-shadow: 0 0 15px white; /* Shining effect */
 }
 
 /* Title styling */
 .title-font {
   font-size: 1.5rem;
-  color: white;
+  color: white; /* White text for the title */
+  flex-grow: 1; /* Ensure title takes available space */
 }
 
 /* Navigation container */
 nav {
   padding-left: 950px;
   display: flex; /* Horizontal alignment for buttons */
-  gap: 1.5rem; /* Add space between nav items */
+  gap: 2rem; /* Add space between nav items */
   align-items: center; /* Vertically center nav items */
+  margin-left: auto; /* Push nav items to the right */
 }
 
 /* Individual nav items */
@@ -35,13 +39,15 @@ nav {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   position: relative;
-  transition: color 0.3s ease;
-  color: white; /* Default color for nav items */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Add transition for background color */
+  color: white; /* White text color for nav items */
   cursor: pointer;
+  padding: 0.5rem 1rem; /* Add padding for better click area */
+  white-space: nowrap; /* Prevent wrapping of nav items */
 }
 
 .nav-item:hover {
-  color: #f18baf; /* Change color on hover */
+  color: white; /* Keep text white on hover */
 }
 
 /* Glow effect */
