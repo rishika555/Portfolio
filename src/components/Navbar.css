@@ -15,6 +15,7 @@
   z-index: 1000;
   border-bottom: 3px solid white;
   box-shadow: 0 0 15px white;
+  width: 100%;
 }
 
 /* Title styling */
@@ -22,7 +23,7 @@
   font-size: 1.5rem;
   color: white;
   font-weight: bold;
-  white-space: nowrap; /* Prevent title from wrapping */
+  white-space: nowrap;
 }
 
 /* Navigation container */
@@ -42,7 +43,7 @@ nav {
   color: white;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  white-space: nowrap; /* Prevent nav links from wrapping */
+  white-space: nowrap;
 }
 
 .nav-item:hover {
