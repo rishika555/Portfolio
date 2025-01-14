@@ -13,7 +13,7 @@ export default function Navbar() {
         </div>
 
         {/* Right-aligned navigation links */}
-        <nav className="flex gap-4">
+        <nav className="flex gap-6">
           <Link 
             to="about" 
             smooth={true} 
