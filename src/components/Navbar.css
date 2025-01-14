@@ -22,6 +22,7 @@
   font-size: 1.5rem;
   color: white;
   font-weight: bold;
+  white-space: nowrap; /* Prevent title from wrapping */
 }
 
 /* Navigation container */
@@ -29,7 +30,6 @@ nav {
   display: flex;
   gap: 2rem;
   align-items: center;
-  margin-left: auto;
 }
 
 /* Individual nav items */
@@ -42,7 +42,7 @@ nav {
   color: white;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  white-space: nowrap;
+  white-space: nowrap; /* Prevent nav links from wrapping */
 }
 
 .nav-item:hover {
