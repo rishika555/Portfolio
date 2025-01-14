@@ -26,11 +26,12 @@
 
 /* Navigation container */
 nav {
-  padding-left: 550px;
   display: flex; /* Horizontal alignment for buttons */
   gap: 2rem; /* Add space between nav items */
   align-items: center; /* Vertically center nav items */
-  margin-left: auto; /* Push nav items to the right */
+  margin-left: auto; /* Push the navigation items to the far right */
+  padding-left: 0; /* Remove unnecessary left padding */
+  padding-right: 20px; /* Optional: Add some padding on the right for spacing */
 }
 
 /* Individual nav items */
