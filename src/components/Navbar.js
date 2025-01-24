@@ -5,13 +5,8 @@ import './Navbar.css';
 export default function Navbar() {
   return (
     <header className="bg-gradient shadow-lg md:sticky top-0 z-10">
-      <div className="container mx-auto flex items-center justify-between px-6"> {/* Ensure Flexbox behavior */}
-        {/* Title */}
-        <div className="title-font">
-          My Website
-        </div>
-
-        {/* Right-aligned navigation links */}
+      <div className="container mx-auto flex items-center justify-start px-6">
+        {/* Left-aligned navigation links */}
         <nav className="flex gap-6">
           <Link 
             to="about" 
