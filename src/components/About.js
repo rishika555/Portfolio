@@ -31,7 +31,7 @@ export default function About() {
             <p>Graphic Era University</p>
             <p>Bachelor of Technology (B.Tech)</p>
             <p>Computer Science</p>
-            <p>CGPA: 8.74/10.00</p>
+            <p>CGPA: 8.61/10.00</p>
           </div>
           <div className="card" data-aos="flip-left">
             <p>The Montessori School</p>
@@ -59,7 +59,7 @@ export default function About() {
             <p>Developer Tools</p>
             <p>
               VS Code, Android Studio, Eclipse, Arduino IDE, Jupyter Notebook,
-              Postman
+              Postman, Docker
             </p>
           </div>
           <div className="card" data-aos="flip-left">

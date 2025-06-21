@@ -8,9 +8,9 @@
 
   body {
     /*background: linear-gradient(135deg, #df95a0, #86bcdd, #8ed8a7, #c2a2d1, #f0d76b);*/
-    background-image: url('./bg.png');
+    background-image: url('./bg2.png');
     background-size: 400% 400%; /* Adds a subtle dynamic look if animated */
-    animation: gradientShift 55s ease infinite; /* Optional: Add animation for a flowing effect */
+    animation: gradientShift 125s ease infinite; /* Optional: Add animation for a flowing effect */
   height: 100vh;
   margin: 0;
 }

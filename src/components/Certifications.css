@@ -10,7 +10,7 @@
 .certifications-heading {
   font-size: 2.5rem;
   font-weight: bold;
-  color: white;
+  color: rgb(7, 81, 50);
   margin-bottom: 2rem;
   text-shadow: 0 0 10px #fff, 0 0 20px #f18baf, 0 0 30px #f5a9b8, 0 0 40px #ff1493;
   animation: glow 1.5s infinite;

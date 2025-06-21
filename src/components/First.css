@@ -28,15 +28,15 @@
 .static-text {
   font-size: 3rem;
   font-weight: bold;
-  color: rgb(174, 208, 245);
-  text-shadow: 0 0 10px rgb(249, 248, 251);
+  color: rgb(40, 7, 122);
+  text-shadow: 0 0 10px rgb(27, 127, 186);
 }
 
 .dynamic-text {
   font-size: 2.5rem; /* Adjusted size to fit better */
-  color: rgb(208, 172, 198);
+  color: rgb(76, 3, 56);
   font-weight: bold;
-  text-shadow: 0 0 10px rgb(241, 236, 236), 0 0 10px rgb(94, 81, 81);
+  text-shadow: 0 0 10px rgb(154, 81, 191), 0 0 10px rgb(137, 34, 34);
   margin-top: 1rem; /* Space between static and dynamic text */
   transition: all 0.5s ease;
   white-space: nowrap; /* Ensure text does not wrap */
@@ -58,8 +58,8 @@
   backface-visibility: hidden;
   border-radius: 10px;
   transition: transform 1s, box-shadow 0.5s ease-in-out; /* Smooth transition for the glow */
-  border: 4px solid white; /* White border */
-  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6); /* Glowing effect */
+  border: 4px solid rgb(14, 2, 2); /* White border */
+  box-shadow: 0 0 20px 5px rgba(28, 1, 1, 0.6); /* Glowing effect */
 }
 
 /* Optional: Glow intensifies on hover */
