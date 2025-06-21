@@ -8,6 +8,18 @@
   box-sizing: border-box;
   background-size: 400% 400%;
 }
+.profile-image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
 .left-side {
   flex: 1;
